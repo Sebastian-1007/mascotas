@@ -1,0 +1,79 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-image: url('/public/huellas.jpg');
+  background-repeat: repeat;
+  background-size: 150px;
+}
+
+h1 {
+  text-align: center;
+  color: #ff5733;
+  position: relative;
+}
+
+h1::after {
+  content: '\1F415'; /* Emoji de perrito */
+  margin-left: 10px;
+}
+
+input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
+  border: 2px solid #ff5733;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #ff8c42;
+  box-shadow: 0 0 5px #ff8c42;
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+
+th {
+  background-color: #ff5733;
+  color: white;
+}
+
+th::after {
+  content: '\1F436'; /* Emoji de carita de perrito */
+  margin-left: 5px;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr td::before {
+  content: '\1F9AD'; /* Emoji de huesito */
+  margin-right: 5px;
+}
+
+
