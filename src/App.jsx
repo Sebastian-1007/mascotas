@@ -6,7 +6,7 @@ const App = () => {
   const [busqueda, setBusqueda] = useState("");
 
   useEffect(() => {
-    fetch("http://3.87.219.162/mascotas")
+    fetch("https://3.87.219.162/mascotas")
     
       .then((response) => response.json())
       .then((data) => setMascotas(data))
